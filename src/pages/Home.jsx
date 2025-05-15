@@ -6,6 +6,9 @@ import { useMountains } from '../components/MountainContext';
 export default function Home() {
   const { isAuthenticated } = useMountains();
 
+  // console.log("isAuthenticated", isAuthenticated);
+  
+
   return (
     <div className="relative min-h-screen w-full font-sans bg-blue-700 md:bg-transparent overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-[35%_65%] h-screen">

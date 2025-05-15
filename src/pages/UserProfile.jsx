@@ -13,6 +13,9 @@ export default function UserProfile() {
     const currentUserEmail = localStorage.getItem('currentUser');
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const currentUser = users.find(user => user.email === currentUserEmail);
+
+    console.log("isAuthenticated", isAuthenticated);
+    
     useEffect(() => {
         if (!currentUserEmail) {
             setIsAuthenticated(false);

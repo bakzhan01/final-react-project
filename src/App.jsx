@@ -20,9 +20,9 @@ function App() {
       <Route path='/aboutme' element={<AboutMe />} />
       <Route
         path='/user'
-        element={
-          <ProtectedRoute element={<UserProfile />} />
-        }
+        element={<ProtectedRoute>
+          <UserProfile />
+        </ProtectedRoute>}
       />
     </Routes>
   );

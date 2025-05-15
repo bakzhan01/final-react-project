@@ -154,7 +154,7 @@ const MountainContext = createContext();
   ];
   
 export const MountainProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState  (false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
     <MountainContext.Provider value={{ almatyMountains, isAuthenticated, setIsAuthenticated}}>
       {children}
